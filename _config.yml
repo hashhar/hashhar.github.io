@@ -8,6 +8,7 @@ baseurl: ""
 url: ""
 twitter_username: hashhar
 github_username: hashhar
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
@@ -18,3 +19,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - deploy.cmd
+  - getruby.cmd
+  - Rakefile
