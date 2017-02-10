@@ -4,12 +4,44 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm Ashhar Hasan, a recent graduate with a Bachelors in Computer Science from
+[Jamia Millia Islamia](http://jmi.ac.in). I live in New Delhi, India. I learned
+programming mostly in my early teens using various implementations of Microsoft
+BASIC and then later moved on to C++ and Visual Basic .NET on an assembled PC
+with a Pentium 3 (533MHz) machine that had 256MB of RAM. I now like working with
+C#, C++ and Shell Scripts. I am also proficient in Python and Java and am
+currently learning Ruby and TypeScript.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+# Why do you blog?
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+It's kind of a selfish reason but mostly just to keep track of the things I've
+been doing and things that I plan on doing. It also serves as a great place to
+share whatever knowledge and expertise I've gained through my own experiences.
+Hopefully other people will find these posts helpful, relevant, or interesting.
+I also beleive that blogging is a two-way conversation, so I encourage e-mails
+and comments, as long as they are on-topic mostly.
+
+# Why the crazy name unrelated to coding?
+
+For one, it's [marginally related to coding](http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered/185156#185156).
+Also because the phrase means "dangerous or unexplored territories", in
+imitation of a medieval practice of putting illustrations of dragons on
+uncharted areas of maps and that's what this blog tries to explore - "unexplored
+territories in programming and software development".
+
+# Where can I find you?
+
+You can e-mail me at: hashhar at outlook dot com
+
+I have quite a lot of social media profiles and here's a list:
+
+- [Twitter](https://twitter.com/hashhar)
+- [GitHub](https://github.com/hashhar)
+- [Stack Overflow](https://stackoverflow.com/users/4594699/ashhar-hasan?tab=profile)
+
+Here are some places not related to programming:
+
+- [IMDb](https://www.imdb.com/user/ur26004883)
+- [Last.fm](https://www.last.fm/user/hashhar)
+
+You can find me on most places using the username "hashhar".
