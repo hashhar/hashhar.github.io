@@ -31,7 +31,7 @@ territories in programming and software development".
 
 # Where can I find you?
 
-You can e-mail me at: hashhar at outlook dot com
+You can e-mail me at: `hashhar at outlook dot com`
 
 I have quite a lot of social media profiles and here's a list:
 
