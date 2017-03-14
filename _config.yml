@@ -4,12 +4,11 @@ description: >
   Programming and social factors.
   A blog about programming, customising development environments and troubleshooting
   weird issues so that you don't have to. There may be occasional kittens and puppers.
-baseurl: ""
-url: ""
+# url: ""
+# baseurl: ""
 twitter_username: hashhar
 github_username: hashhar
 permalink: /:title/
-repository: hashhar/hashhar.github.io
 
 # Build settings
 markdown: kramdown
