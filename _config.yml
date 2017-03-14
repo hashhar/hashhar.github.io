@@ -9,6 +9,7 @@ url: ""
 twitter_username: hashhar
 github_username: hashhar
 permalink: /:title/
+repository: hashhar/hashhar.github.io
 
 # Build settings
 markdown: kramdown
