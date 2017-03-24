@@ -234,4 +234,4 @@ quality contributors to your project. You can find the post [here][post for main
 [The Joy of Coding]: https://air.mozilla.org/channels/livehacking/
 [Linus Torvalds]: https://en.wikipedia.org/wiki/Linus_Torvalds
 [torvalds good commit message]: https://github.com/torvalds/subsurface-for-dirk/blob/0f58510ce0244513521296b75281fcc32f72a931/README#L92-L119
-[post for maintainers]: /making-your-open-source-project-contributor-friendly
+[post for maintainers]: {{ site.url }}/making-your-open-source-project-contributor-friendly
