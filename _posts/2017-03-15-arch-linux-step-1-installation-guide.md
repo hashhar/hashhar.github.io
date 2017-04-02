@@ -264,6 +264,68 @@ DEPLOYMENT=production
 
 The newly configured environment has no network connection activated by default.
 
+For setting up a wired connection, follow [this][network configuration].  
+For setting up a wireless connection, follow [this][wireless network configuration].
+
+## Root password
+
+You can set the root password by running `passwd`.
+
+## Boot loader
+
+There are a lot of bootloaders available. See [this][bootloaders] for available choices and configurations.
+
+Personally I use [systemd-boot][]. You can use it if you use an UEFI system and have your EFI System Partition formatted
+as VFAT (FAT32). It can be made to work in other configurations too but you should consult the [wiki
+article][systemd-boot] for that.
+
+### Setting up systemd-boot
+
+1. Make sure you are booted using UEFI.
+2. Mount your EFI system partition preferabbly to `/boot` (because systemd-boot cannot load EFI binaries from partitions
+   other than ESP. In case you want to separate `/boot` from ESP, see [this][systemd-boot manually].
+3. If the ESP is **not** mounted at `/boot`, copy your kernel and initramfs to the ESP. To automate this process you can
+   take a look at [this article][EFISTUB].
+4. Now install systemd-boot by running `bootctl --path=esp install` where `esp` is the path where you mounted the ESP.
+5. Now configure the bootloader as follows.
+6. Edit the file `esp/loader/loader.conf`. An example can be found at `/usr/share/systemd/bootctl/loader.conf`.
+
+```
+timeout 0        # time after which default entry boots. If set to 0, you need to hold Space during boot to show the
+                 # boot menu.
+default Windows* # the default entry file to use for booting. This can be a glob pattern matching a file under
+                 # esp/loader/entries/
+editor  1        # whether to allow editing of boot parameters from the boot menu.
+```
+
+7. Add an entry for your Linux systems under a file in `esp/loader/entries/name.conf`. Windows is autodetected. An
+   example file can be found at `/usr/share/systemd/bootctl/`.
+
+```
+title   Arch Linux           # the title to show on the boot menu
+linux   /vmlinuz-linux       # the path to the vmlinuz relative to the EFI partition
+initrd  /intel-ucode.img     # the path to the initrd images. Install the intel-ucode package and use this line to
+                             # enable processor microcode updates.
+initrd  /initramfs-linux.img
+options root=PARTUUID=024e95d2-3f50-4341-82f3-76b51b36a1ad rw quiet vga=current loglevel=3 # the boot parameters for the
+                             # kernel
+```
+
+8. Enable microcode updates by following [this article][intel microcode].
+
+## Reboot
+
+Exit the chroot environment by typing `exit` or pressing `Ctrl+D`.  
+Unmount all mounted partitions using `umount -R /mnt`.  
+Finally restart the machine by running `reboot`.  
+Remove the installation media and login into the new system using the password set using `passwd`.
+
+## Post-installation
+
+You can now make a lot of changes that will needed to get basic functionality that you are used to out of the box in
+other distros. This is where learning begins. You can find my own post-installation guide [here][post-installation
+guide].
+
 <!-- Links -->
 [Arch Wiki Installation Guide]: https://wiki.archlinux.org/index.php/Installation_guide
 [special installation scenarios]: https://wiki.archlinux.org/index.php/Category:Getting_and_installing_Arch
@@ -308,3 +370,9 @@ The newly configured environment has no network connection activated by default.
 [localizations]: https://wiki.archlinux.org/index.php/Localization
 [man:locale.conf]: http://man7.org/linux/man-pages/man5/locale.conf.5.html
 [man:vconsole.conf]: http://man7.org/linux/man-pages/man5/vconsole.conf.5.html
+[bootloaders]: https://wiki.archlinux.org/index.php/Category:Boot_loaders
+[systemd-boot]: https://wiki.archlinux.org/index.php/Systemd-boot
+[systemd-boot manually]: https://wiki.archlinux.org/index.php/Systemd-boot#Manually
+[EFISTUB]: https://wiki.archlinux.org/index.php/EFISTUB#Using_systemd
+[intel microcode]: https://wiki.archlinux.org/index.php/Microcode#Enabling_Intel_microcode_updates
+[post-installation guide]: {{ site.url }}/arch-linux-step-2-basic-functionality
