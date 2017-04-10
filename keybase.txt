@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/hashhar
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://hashhar.github.io
+  * I am hashhar (https://keybase.io/hashhar) on keybase.
+  * I have a public key ASAP0OYJlAhJVnnyRLq2tAeTwzSFIjuhVw0k4SW94pLtmQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01200fd0e6099408495679f244bab6b40793c33485223ba1570d24e125bde292ed990a",
+            "host": "keybase.io",
+            "kid": "01200fd0e6099408495679f244bab6b40793c33485223ba1570d24e125bde292ed990a",
+            "uid": "eeafc0119fa07a95e8db5cabded77619",
+            "username": "hashhar"
+        },
+        "service": {
+            "hostname": "hashhar.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1491783488,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1491783468,
+        "hash": "a00a178bdb829db20597863f2fd71dc72702106ddd65fff7e3b50b5633b462cba8ee58e080e9e7702f06cf5b43747c25bdf791b3b457b223a975bd3220a5e4db",
+        "seqno": 1009139
+    },
+    "prev": "a16fd79a4051d0b8fcd8bf5546aed5d315e494558eada10d444f6d0c75dbc978",
+    "seqno": 28,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgD9DmCZQISVZ58kS6trQHk8M0hSI7oVcNJOElveKS7ZkKp3BheWxvYWTFAvp7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMGZkMGU2MDk5NDA4NDk1Njc5ZjI0NGJhYjZiNDA3OTNjMzM0ODUyMjNiYTE1NzBkMjRlMTI1YmRlMjkyZWQ5OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMGZkMGU2MDk5NDA4NDk1Njc5ZjI0NGJhYjZiNDA3OTNjMzM0ODUyMjNiYTE1NzBkMjRlMTI1YmRlMjkyZWQ5OTBhIiwidWlkIjoiZWVhZmMwMTE5ZmEwN2E5NWU4ZGI1Y2FiZGVkNzc2MTkiLCJ1c2VybmFtZSI6Imhhc2hoYXIifSwic2VydmljZSI6eyJob3N0bmFtZSI6Imhhc2hoYXIuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0OTE3ODM0ODgsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5MTc4MzQ2OCwiaGFzaCI6ImEwMGExNzhiZGI4MjlkYjIwNTk3ODYzZjJmZDcxZGM3MjcwMjEwNmRkZDY1ZmZmN2UzYjUwYjU2MzNiNDYyY2JhOGVlNThlMDgwZTllNzcwMmYwNmNmNWI0Mzc0N2MyNWJkZjc5MWIzYjQ1N2IyMjNhOTc1YmQzMjIwYTVlNGRiIiwic2Vxbm8iOjEwMDkxMzl9LCJwcmV2IjoiYTE2ZmQ3OWE0MDUxZDBiOGZjZDhiZjU1NDZhZWQ1ZDMxNWU0OTQ1NThlYWRhMTBkNDQ0ZjZkMGM3NWRiYzk3OCIsInNlcW5vIjoyOCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBf8hl6piHR4bwRxsWhSEOlshYuQJEcZKliSbxJ9i4DsRsvRX47fJP9ee1lVFGSqMNaaA1LK2CmC5k1oRks7eQAqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgt6BmRN78shn8O/Yf8Ws8zJCZcuum4u7f/vJvkUlya26jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/hashhar
+
+==================================================================
