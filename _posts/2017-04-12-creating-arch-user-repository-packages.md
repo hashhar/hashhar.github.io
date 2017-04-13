@@ -6,7 +6,9 @@ categories: ArchLinux,distro,linux,aur,packaging,maintainer
 ---
 
 If you want to skip the backstory and get to the material, click
-[here][#Arch-Linux-Package-Management].
+[here](#arch-linux-package-management). Or if you are looking for a simple
+checklist to tick off before releasing a new package version, take a look at
+[this tool created by me][package-management-tools].
 
 ## How it all came to be OR Unnecessary banter
 
@@ -73,6 +75,7 @@ An example PKGBUILD prototype looks like this:
 
 ```bash
 # Maintainer: Your Name <youremail@domain.com>
+# Contributor: Previous Maintainer <email>
 pkgname=NAME
 pkgver=VERSION
 pkgrel=1
@@ -197,6 +200,21 @@ Here's what makepkg does and you don't need to handle.
 
 - If you are using a VCS url (git://, svn:// or similar), make sure that the VCS
   itself is present in the `makedepends` array.
+- You can use architecture specific `source` and checksum arrays.
+
+```bash
+# Example section from a real PKGBUILD
+source_x86_64=("https://github.com/maoserr/redshiftgui/releases/download/${pkgver}-Arch64/RedshiftGUI-${pkgver}-Linux-x86_64.tar.gz"
+               'redshiftgui.sh')
+sha256sums_x86_64=('1170e8d8eca1b7b936ffb5e70763259b3f15db810bf2d05b3b0221d8e35bbb27'
+                   'df03e192fe32bda2ea546be85faf51c030ae8dd46c40aad229e39b6b296897b5')
+source_i686=("https://github.com/maoserr/redshiftgui/releases/download/${pkgver}-Arch64/RedshiftGUI-${pkgver}-Linux-i686.tar.gz"
+             'redshiftgui.sh')
+sha256sums_i686=('4d34de7b9bf106569bd7b87f2cd96640e60f723cf27e37e89219c8ea5b14cb2d'
+                 'df03e192fe32bda2ea546be85faf51c030ae8dd46c40aad229e39b6b296897b5')
+
+```
+
 - The general format for the `source` array is:
 
 ```
@@ -297,6 +315,7 @@ pkgver() {
 [xz]: https://en.wikipedia.org/wiki/Xz
 [namcap]: https://wiki.archlinux.org/index.php/Namcap
 [integrity variables]: https://wiki.archlinux.org/index.php/PKGBUILD#Integrity
+[package-management-tools]: https://github.com/hashhar/package-management-tools
 
 <!-- CSS -->
 <style>
